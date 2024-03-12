@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditarMensalidade.EditarMensalidade">
+
+    <ImageView
+        android:id="@+id/imageProdutoEditar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imageGaleriaEditar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageProdutoEditar"
+        app:layout_constraintEnd_toEndOf="@+id/imageProdutoEditar"
+        app:layout_constraintStart_toStartOf="@+id/imageProdutoEditar"
+        app:srcCompat="@drawable/ic_galera" />
+
+    <EditText
+        android:id="@+id/editPrecoMensalidadeEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/borda_mensalidade"
+        android:ems="10"
+        android:hint="Preço 100.00"
+        android:inputType="number|numberDecimal"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProdutoEditar" />
+
+    <EditText
+        android:id="@+id/editDataMensalidadeEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/borda_mensalidade"
+        android:ems="10"
+        android:hint="mês/ano"
+        android:inputType="datetime|date"
+        android:maxEms="7"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrecoMensalidadeEditar" />
+
+    <EditText
+        android:id="@+id/editTituloCobrancaEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/borda_mensalidade"
+        android:ems="10"
+        android:hint="Titulo da cobrança"
+        android:inputType="text"
+        android:maxLines="8"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDataMensalidadeEditar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/gradiente_botao"
+        android:padding="20dp"
+        android:text="atualizar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTituloCobrancaEditar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

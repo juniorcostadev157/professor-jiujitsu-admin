@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/borda_mensalidade_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/borda_mensalidade_2"
+        android:fontFamily="serif-monospace"
+        android:padding="5dp"
+        android:text="@string/comprovante_titutlo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTituloCobrancaComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensalidade"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNomeAlunoComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Junior Costa"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEmailComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="teste@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPrecoComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 100.00"
+        android:textAlignment="center"
+        android:textColor="@color/verde_forte"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStatusPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Em Verificação"
+        android:textAlignment="center"
+        android:textColor="@color/vermelho_forte"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRefMes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="02/2024"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
